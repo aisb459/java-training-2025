@@ -6,10 +6,10 @@ import java.util.Date;
 public class Transaction {
     private Long accountNumber;
     private int amount;
-    private String transactionType;
+    private TransactionType transactionType;
     private LocalDate transactionTime;
 
-    public Transaction(Long accountNumber, int amount, String transactionType, LocalDate transactionTime) {
+    public Transaction(Long accountNumber, int amount, TransactionType transactionType, LocalDate transactionTime) {
         this.accountNumber = accountNumber;
         this.amount = amount;
         this.transactionType = transactionType;
@@ -32,11 +32,11 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public String getTransactionType() {
+    public TransactionType getTransactionType() {
         return transactionType;
     }
 
-    public void setTransactionType(String transactionType) {
+    public void setTransactionType(TransactionType transactionType) {
         this.transactionType = transactionType;
     }
 
